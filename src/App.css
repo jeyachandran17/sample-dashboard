@@ -1,49 +1,33 @@
-
+.dashboard_header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
 .head {
     opacity: 0.7;
 }
 
-.report{
-    height: 40px;
-    display: flex;
+.report {
     align-items: center;
-    color: white;
+    height: 35px;
+    width: 150px;
+    display: flex;  
     background-color: #4e73df;
-    border-radius: 5px;
-    border: 1px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    color: white;
 }
-
-.pars {
-    display: flex;
-    gap: 5px;
-}
-
-.bar {
-    width: 180px;
-    margin-top: 16px;
-}
-
-.dashboard{
-    margin-left: 30px;
-    margin-right: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
 .box1 {
     height: auto;
     display: flex;
+    justify-content: space-around;
+    gap: 20px;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
-    margin-left: 20px;
-    /* align-items: center; */
-    /* flex-wrap: wrap; */
 }
-
 .boxbody1,
 .boxbody2,
 .boxbody3,
@@ -54,9 +38,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* box-shadow: 1px 1px 1px 1px  gray; */
     box-shadow: 0px 0px 0px 1px gainsboro;
 
+}
+.pars {
+    display: flex;
+    gap: 5px;
+}
+
+.bar {
+    width: 180px;
+    margin-top: 16px;
 }
 
 .boxbody1 {
@@ -80,7 +72,6 @@
     flex-flow: wrap;
     align-items: center;
 }
-
 .type1,
 .type2,
 .type3,
@@ -115,12 +106,9 @@
     color: orange;
 }
 
-/* ---------------------cart part ---------------- */
-
 .revenue_part {
     height: 400px;
     width: 500px;
-    /* border: 2px solid gray; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,7 +120,6 @@
     width: 900px;
     display: flex;
     justify-content: center;
-    /* border: 2px solid gray; */
 }
 
 .earnings_overview_heading,
@@ -142,22 +129,34 @@
 
 .revenue_sources,
 .earnings_overview {
-    /* border: 1px solid gray; */
     border-radius: 5px;
-    box-shadow: 0px 0px 0px 2px gainsboro;
+    box-shadow: 0px 0px 0px 1px gainsboro;
 }
 
 .box2 {
-    margin-left: 20px;
     margin-top: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 10px;
 
 }
-
-/* --------------- colorbox -------------------- */
+.earnings_overview_tittle,
+.revenue_sources-tittle {
+    border-bottom: 1px solid gray;
+    padding-left: 15px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.box3{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
 .Primary,
 .Success,
@@ -231,41 +230,21 @@
 
 .column1,
 .column2 {
-    /* border: 1px solid gray; */
     height: auto;
     width: 705px;
-    margin-right: 25px;
 }
-
-.box3 {
-    margin-top: 25px;
-    margin-left: 20px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
 .projects {
     height: auto;
-    border: 1px solid gray;
     margin-bottom: 20px;
     border-radius: 5px;
-    box-shadow: 0px 0px 0px 2px gainsboro;
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 0px 1px gainsboro;
 }
 
-.Illustrations {
-    border: 1px solid gray;
-    margin-bottom: 20px;
+.Development_Approach,.Illustrations {
     border-radius: 5px;
-    box-shadow: 0px 0px 0px 2px gainsboro;
+    box-shadow: 0px 0px 0px 1px gainsboro;
 }
-
-.Development_Approach {
-    border: 1px solid gray;
-    border-radius: 5px;
-    box-shadow: 0px 0px 0px 2px gainsboro;
-}
-
 .colorbox {
     display: flex;
     justify-content: center;
@@ -279,34 +258,22 @@
     padding-left: 15px;
     margin-bottom: 20px;
 }
-
-.earnings_overview_tittle,
-.revenue_sources-tittle {
-    border-bottom: 1px solid gray;
-    padding-left: 15px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-
 .txtcontent {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin-left: 10px;
+    padding-bottom: 10px;
 }
-
 .project_content {
     display: flex;
     justify-content: space-between;
-    /* margin-bottom: 0px; */
+
 }
-
-
 .project5 {
-    /* background-color: #36b9cc; */
     margin-bottom: 20px;
 }
-
 .project1,
 .project2,
 .project3,
@@ -316,8 +283,9 @@
     padding-right: 10px;
 }
 
-.project_tittle {
+.project_tittle,.Illustrations_tittle,
+.Development_Approach_tittle {
+    display: flex;
     padding-left: 15px;
     border-bottom: 1px solid gray;
-    margin-bottom: 20px;
 }
